@@ -1,9 +1,20 @@
 const inputBox = document.getElementById('input-box')
 const listContainer = document.getElementById('list-container')
+let button = document.getElementById('btn');
+
+
+button.addEventListener('click', () => {
+  button.style.transform = 'scale(0.1)'
+  
+  setTimeout(()=>{
+    button.style.transform ='scale(1)'
+  }, 200);
+})
+
 
 function addTask() {
   if (inputBox.value === '') {
-    alert('cannot leave this field empty')
+    console.log('');
   } else {
     let li = document.createElement('li');
     li.innerHTML = inputBox.value;
@@ -25,6 +36,7 @@ listContainer.addEventListener('click', function(e) {
     saveData()
   }
 }, false);
+
 
 function saveData() {
   localStorage.setItem('data', listContainer.innerHTML)
