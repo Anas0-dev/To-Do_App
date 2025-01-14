@@ -1,14 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Prevent overflow issues */
+  box-sizing: border-box;
+  /* Prevent overflow issues */
   font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -20,10 +23,12 @@ html, body {
 
 .app {
   width: 100%;
-  max-width: 480px; /* Adjusted for smaller screens */
+  max-width: 480px;
+  /* Adjusted for smaller screens */
   background-color: #fff;
   margin: 100px auto 20px;
-  padding: 20px; /* Reduced padding for smaller screens */
+  padding: 20px;
+  /* Reduced padding for smaller screens */
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +41,8 @@ html, body {
   margin-bottom: 20px;
   font-size: 22px;
   text-align: center;
-  word-wrap: break-word; /* Prevent text overflow */
+  word-wrap: break-word;
+  /* Prevent text overflow */
 }
 
 .app h1 img {
@@ -46,10 +52,11 @@ html, body {
 
 .row {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for smaller devices */
+  flex-wrap: wrap;
+  /* Allow wrapping for smaller devices */
   justify-content: space-between;
   align-items: center;
-  background: #edeef0;
+  background: #EDEEF0;
   border-radius: 30px;
   padding: 10px;
   margin-bottom: 25px;
@@ -62,23 +69,26 @@ input {
   outline: none;
   padding: 10px;
   font-size: 14px;
-  min-width: 0; /* Prevent input from causing overflow */
+  min-width: 0;
+  /* Prevent input from causing overflow */
 }
 
 button {
   border: none;
   outline: none;
   padding: 10px 20px;
-  background: #ff5945;
+  /* background: #FF5945; */
+  background: #9841DF;
   border-radius: 40px;
   color: #fff;
   font-size: 14px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #e04a3d;
+  /* background: #E04A3D; */
+  background: #C000FF;
 }
 
 ul {
@@ -94,7 +104,8 @@ ul li {
   font-size: 16px;
   cursor: pointer;
   position: relative;
-  word-wrap: break-word; /* Prevent text overflow */
+  word-wrap: break-word;
+  /* Prevent text overflow */
 }
 
 ul li::before {
@@ -121,8 +132,9 @@ ul li.checked::before {
 
 ul li span {
   position: absolute;
-  right: 10px; /* Adjusted for smaller screens */
-  top: 12px;
+  right: 10px;
+  /* Adjusted for smaller screens */
+  top: 7px;
   width: 30px;
   height: 30px;
   font-size: 18px;
@@ -130,16 +142,20 @@ ul li span {
   line-height: 30px;
   text-align: center;
   border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 ul li span:hover {
-  background: #edeef0;
+  background-color: #FF0000;
+  color: #fff;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
   .app {
-    padding: 15px; /* Reduced padding */
+    padding: 15px;
+    /* Reduced padding */
     margin: 50px auto 20px;
   }
 
@@ -191,22 +207,26 @@ ul li span:hover {
   }
 
   .row {
-    flex-direction: column; /* Stack input and button vertically */
+    flex-direction: column;
+    /* Stack input and button vertically */
     gap: 10px;
     padding: 10px;
   }
 
   input {
-    width: 100%; /* Full width for input */
+    width: 100%;
+    /* Full width for input */
     margin-bottom: 10px;
   }
 
   button {
-    width: 100%; /* Full width for button */
+    width: 100%;
+    /* Full width for button */
     padding: 10px;
   }
 
   ul li {
-    font-size: 12px; /* Smaller font size for items */
+    font-size: 12px;
+    /* Smaller font size for items */
   }
-}
+  }
