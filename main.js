@@ -1,16 +1,5 @@
 const inputBox = document.getElementById('input-box')
 const listContainer = document.getElementById('list-container')
-let button = document.getElementById('btn');
-
-
-button.addEventListener('click', () => {
-  button.style.transform = 'scale(0.1)'
-  
-  setTimeout(()=>{
-    button.style.transform ='scale(1)'
-  }, 200);
-})
-
 
 function addTask() {
   if (inputBox.value === '') {
